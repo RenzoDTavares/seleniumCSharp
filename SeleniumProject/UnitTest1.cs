@@ -16,6 +16,7 @@ namespace SeleniumProject
             {
                 var chromeDriverPath = "/home/ec2-user/";
                 // Test
+                // Tst actions yml
                 ChromeOptions options = new ChromeOptions();
                 options.AddArgument("disable-infobars");
                 options.AddArgument("--disable-extensions");
