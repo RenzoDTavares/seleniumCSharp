@@ -15,7 +15,7 @@ namespace SeleniumProject
             if (Driver == null)
             {
                 ChromeOptions options = new ChromeOptions();
-                // options.AddArgument("--headless"); // Isso habilita o modo headless
+                options.AddArgument("--headless"); // Isso habilita o modo headless
                 Driver = new ChromeDriver(options);
                 Driver.Navigate().GoToUrl("https://renzodtavares.github.io/simpleCRUD/main.html");
             }
@@ -89,7 +89,7 @@ namespace SeleniumProject
             }
             else
             {
-                Assert.Fail("Nenhum bot„o 'Editar' encontrado.");
+                Assert.Fail("Nenhum bot√£o 'Editar' encontrado.");
             }
 
             void EditarItem(string newRole, string newSalary)
@@ -126,11 +126,11 @@ namespace SeleniumProject
 
                 
                 bool itemDeleted = Driver.PageSource.Contains(itemName);
-                Assert.IsTrue(itemDeleted, "O item foi excluÌdo com sucesso.");
+                Assert.IsTrue(itemDeleted, "O item foi exclu√≠do com sucesso.");
             }
             else
             {
-                Assert.Fail("Nenhum bot„o 'Delete' encontrado.");
+                Assert.Fail("Nenhum bot√£o 'Delete' encontrado.");
             }
         }
 
@@ -167,15 +167,15 @@ namespace SeleniumProject
                 saveButton.Click();
 
                 var duplicatesMessage = Driver.FindElement(By.CssSelector(".duplicates-message"));
-                //Assert.IsTrue(duplicatesMessage.Displayed, "A mensagem de erro n„o apareceu.");
+                //Assert.IsTrue(duplicatesMessage.Displayed, "A mensagem de erro n√£o apareceu.");
 
                 var employeeNames = Driver.FindElements(By.XPath("//tbody[@id='employeeTable']/tr/td[1]"));
                 var duplicatedNameExists = employeeNames.Any(name => name.Text == userName);
-                Assert.IsFalse(duplicatedNameExists, "O nome duplicado ainda est· na grade.");
+                Assert.IsFalse(duplicatedNameExists, "O nome duplicado ainda est√° na grade.");
             }
             else
             {
-                Assert.Fail("Nenhum nome de funcion·rio encontrado na tabela.");
+                Assert.Fail("Nenhum nome de funcion√°rio encontrado na tabela.");
             }
         }
 
@@ -206,7 +206,7 @@ namespace SeleniumProject
                     }
                 }
             }
-            Assert.Fail("N„o foi possÌvel encontrar verificar os itens na tabela");
+            Assert.Fail("N√£o foi poss√≠vel encontrar verificar os itens na tabela");
             return false;
         }
     }
