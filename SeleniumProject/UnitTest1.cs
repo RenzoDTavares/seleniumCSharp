@@ -26,7 +26,7 @@ namespace SeleniumProject
                 options.AddArgument("--headless"); 
                 options.AddArgument("--user-data-dir=/tmp/chrome-profile");
 
-                IWebDriver Driver = new ChromeDriver(chromeDriverPath, options);
+                Driver = new ChromeDriver(chromeDriverPath, options);
 
                 
                 Driver.Navigate().GoToUrl("https://renzodtavares.github.io/simpleCRUD/main.html");
