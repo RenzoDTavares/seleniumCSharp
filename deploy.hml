@@ -20,7 +20,4 @@ jobs:
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            cd /path/to/your/app
-            git pull
-            # Execute comandos de instalação ou atualização
-            # Reinicie serviços, se necessário
+            cd /home/ec2-user/seleniumCSharp
