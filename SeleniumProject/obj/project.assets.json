@@ -1173,11 +1173,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ZR411RS\\source\\repos\\SeleniumProject\\SeleniumProject\\SeleniumProject.csproj",
+      "projectUniqueName": "C:\\Users\\ZR411RS\\OneDrive - EY\\Documents\\GitHub\\seleniumCSharp\\SeleniumProject\\SeleniumProject.csproj",
       "projectName": "SeleniumProject",
-      "projectPath": "C:\\Users\\ZR411RS\\source\\repos\\SeleniumProject\\SeleniumProject\\SeleniumProject.csproj",
+      "projectPath": "C:\\Users\\ZR411RS\\OneDrive - EY\\Documents\\GitHub\\seleniumCSharp\\SeleniumProject\\SeleniumProject.csproj",
       "packagesPath": "C:\\Users\\ZR411RS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ZR411RS\\source\\repos\\SeleniumProject\\SeleniumProject\\obj\\",
+      "outputPath": "C:\\Users\\ZR411RS\\OneDrive - EY\\Documents\\GitHub\\seleniumCSharp\\SeleniumProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
