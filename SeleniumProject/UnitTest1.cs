@@ -3,7 +3,10 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 using RandomUserConsoleApp;
+using Xunit;
 
+
+[assembly: CollectionBehavior(MaxParallelThreads = -1)]
 namespace SeleniumProject
 {
     public class Tests : DriverHelper
