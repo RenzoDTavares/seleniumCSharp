@@ -37,7 +37,7 @@ namespace SeleniumProject
         [TearDown]
         public void TearDown()
         {
-            Driver.Quit();
+            //Driver.Quit();
         }
 
         [Test, Repeat(5), Order(1)]
