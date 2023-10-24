@@ -21,4 +21,5 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd /home/ec2-user/seleniumCSharp
+            git reset --hard
             git pull
