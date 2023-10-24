@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "putkmBSZ8xxjUZmXkp1hhCjbo2Xcw694ObShUQVHrjZ7i7Q1j0GzDMS6qeUOkNMCtsf108szvFW+xeHZWMr59Q==",
+  "dgSpecHash": "8xuKScuykPm7MAjTB5GxrCGvquWMUx4Hn/X9IIykhTgviIlFj/ex7RqDVXN4SpJnQOBPW3DtwxsDO9Pcq8hh2A==",
   "success": true,
   "projectFilePath": "C:\\Users\\ZR411RS\\OneDrive - EY\\Documents\\GitHub\\seleniumCSharp\\SeleniumProject\\SeleniumProject.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,7 @@
     "C:\\Users\\ZR411RS\\.nuget\\packages\\nuget.frameworks\\6.5.0\\nuget.frameworks.6.5.0.nupkg.sha512",
     "C:\\Users\\ZR411RS\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
     "C:\\Users\\ZR411RS\\.nuget\\packages\\nunit.analyzers\\3.6.1\\nunit.analyzers.3.6.1.nupkg.sha512",
+    "C:\\Users\\ZR411RS\\.nuget\\packages\\nunit.consolerunner\\3.12.0\\nunit.consolerunner.3.12.0.nupkg.sha512",
     "C:\\Users\\ZR411RS\\.nuget\\packages\\nunit3testadapter\\4.4.2\\nunit3testadapter.4.4.2.nupkg.sha512",
     "C:\\Users\\ZR411RS\\.nuget\\packages\\selenium.support\\4.14.1\\selenium.support.4.14.1.nupkg.sha512",
     "C:\\Users\\ZR411RS\\.nuget\\packages\\selenium.webdriver\\4.14.1\\selenium.webdriver.4.14.1.nupkg.sha512",
