@@ -41,7 +41,7 @@ namespace SeleniumProject
             //Driver.Quit();
         }
 
-        /*[Test, Repeat(5), Order(1)]
+        [Test, Repeat(5), Order(1)]
        
         public void InserirItem()
         {
@@ -121,7 +121,7 @@ namespace SeleniumProject
                 saveButton.Click();
             }
         }
-        */
+        
         [Test, Repeat(2), Order(3)]
         public void ExcluirItemAleatorio()
         {
@@ -149,7 +149,7 @@ namespace SeleniumProject
                 Assert.Fail("Nenhum botão 'Delete' encontrado.");
             }
         }
-        /*
+        
         [Test]
         public void IncluirComValidacaoDeDuplicata()
         {
@@ -225,9 +225,6 @@ namespace SeleniumProject
             }
             Assert.Fail("Não foi possível encontrar verificar os itens na tabela");
             return false;
-        }*/
+        }
     }
 }
-    
-
-
