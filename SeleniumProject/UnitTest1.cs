@@ -15,7 +15,7 @@ namespace SeleniumProject
         {
             if (Driver == null)
             {
-                var chromeDriverPath = "/usr/bin/";
+                var chromeDriverPath = "/home/ec2-user/";
                 // Test
                 // Tst actions yml
                 ChromeOptions options = new ChromeOptions();
