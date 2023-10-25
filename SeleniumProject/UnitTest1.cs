@@ -184,11 +184,11 @@ namespace SeleniumProject
                 saveButton.Click();
 
                 var duplicatesMessage = Driver.FindElement(By.CssSelector(".duplicates-message"));
-                //Assert.IsTrue(duplicatesMessage.Displayed, "A mensagem de erro não apareceu.");
+                Assert.IsTrue(duplicatesMessage.Displayed, "A mensagem de erro não apareceu.");
 
                 var employeeNames = Driver.FindElements(By.XPath("//tbody[@id='employeeTable']/tr/td[1]"));
                 var duplicatedNameExists = employeeNames.Any(name => name.Text == userName);
-                //Assert.IsFalse(duplicatedNameExists, "O nome duplicado ainda está na grade.");
+                Assert.IsFalse(duplicatedNameExists, "O nome duplicado ainda está na grade.");
             }
             else
             {
