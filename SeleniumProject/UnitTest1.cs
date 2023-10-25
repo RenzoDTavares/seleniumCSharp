@@ -5,8 +5,6 @@ using OpenQA.Selenium.Support.UI;
 using RandomUserConsoleApp;
 using Xunit;
 
-
-[assembly: CollectionBehavior(MaxParallelThreads = -1)]
 namespace SeleniumProject
 {
     public class Tests : DriverHelper
@@ -17,7 +15,7 @@ namespace SeleniumProject
         {
             if (Driver == null)
             {
-                var chromeDriverPath = "/home/ec2-user/";
+                var chromeDriverPath = "/usr/bin/";
                 // Test
                 // Tst actions yml
                 ChromeOptions options = new ChromeOptions();
