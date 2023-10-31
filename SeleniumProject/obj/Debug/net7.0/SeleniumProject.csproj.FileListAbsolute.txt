@@ -214,3 +214,5 @@ C:\Users\ZR411RS\OneDrive - EY\Documents\GitHub\seleniumCSharp\SeleniumProject\o
 C:\Users\ZR411RS\OneDrive - EY\Documents\GitHub\seleniumCSharp\SeleniumProject\obj\Debug\net7.0\SeleniumProject.pdb
 C:\Users\ZR411RS\OneDrive - EY\Documents\GitHub\seleniumCSharp\SeleniumProject\obj\Debug\net7.0\SeleniumProject.genruntimeconfig.cache
 C:\Users\ZR411RS\OneDrive - EY\Documents\GitHub\seleniumCSharp\SeleniumProject\obj\Debug\net7.0\ref\SeleniumProject.dll
+C:\Users\ZR411RS\OneDrive - EY\Documents\GitHub\seleniumCSharp\SeleniumProject\bin\Debug\net7.0\xunit.abstractions.dll
+C:\Users\ZR411RS\OneDrive - EY\Documents\GitHub\seleniumCSharp\SeleniumProject\bin\Debug\net7.0\xunit.core.dll

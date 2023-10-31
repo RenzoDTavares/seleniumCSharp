@@ -426,6 +426,12 @@
           "buildTransitive/Selenium.WebDriver.targets": {}
         }
       },
+      "Selenium.WebDriver.ChromeDriver/118.0.5993.7000": {
+        "type": "package",
+        "build": {
+          "build/Selenium.WebDriver.ChromeDriver.targets": {}
+        }
+      },
       "System.Drawing.Common/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -1171,6 +1177,29 @@
         "selenium.webdriver.nuspec"
       ]
     },
+    "Selenium.WebDriver.ChromeDriver/118.0.5993.7000": {
+      "sha512": "P+oMf57Rbt2mKr3k2OFijtg+Vm3xHYe147LWQLqB0aumjKuWxoZVZw1+K7rr9KqdGe646kvIVjtQH0+eheCawA==",
+      "type": "package",
+      "path": "selenium.webdriver.chromedriver/118.0.5993.7000",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/DefinePropertiesChromeDriver.targets",
+        "build/Selenium.WebDriver.ChromeDriver.targets",
+        "driver/linux64/LICENSE.chromedriver",
+        "driver/linux64/chromedriver",
+        "driver/mac64/LICENSE.chromedriver",
+        "driver/mac64/chromedriver",
+        "driver/mac64arm/LICENSE.chromedriver",
+        "driver/mac64arm/chromedriver",
+        "driver/win32/LICENSE.chromedriver",
+        "driver/win32/chromedriver.exe",
+        "nupkg-icon.png",
+        "selenium.webdriver.chromedriver.118.0.5993.7000.nupkg.sha512",
+        "selenium.webdriver.chromedriver.nuspec"
+      ]
+    },
     "System.Drawing.Common/7.0.0": {
       "sha512": "KIX+oBU38pxkKPxvLcLfIkOV5Ien8ReN78wro7OF5/erwcmortzeFx+iBswlh2Vz6gVne0khocQudGwaO1Ey6A==",
       "type": "package",
@@ -1276,6 +1305,7 @@
       "NUnit3TestAdapter >= 4.4.2",
       "Selenium.Support >= 4.14.1",
       "Selenium.WebDriver >= 4.14.1",
+      "Selenium.WebDriver.ChromeDriver >= 118.0.5993.7000",
       "coverlet.collector >= 3.2.0",
       "xunit.extensibility.core >= 2.5.3"
     ]
@@ -1351,6 +1381,10 @@
           "Selenium.WebDriver": {
             "target": "Package",
             "version": "[4.14.1, )"
+          },
+          "Selenium.WebDriver.ChromeDriver": {
+            "target": "Package",
+            "version": "[118.0.5993.7000, )"
           },
           "coverlet.collector": {
             "target": "Package",

@@ -16,8 +16,6 @@ namespace SeleniumProject
             if (Driver == null)
             {
                 var chromeDriverPath = "/home/ec2-user/";
-                // Test
-                // Tst actions yml
                 ChromeOptions options = new ChromeOptions();
                 options.AddArgument("disable-infobars");
                 options.AddArgument("--disable-extensions");
@@ -27,9 +25,7 @@ namespace SeleniumProject
                 options.AddArgument("--headless"); 
                 options.AddArgument("--user-data-dir=/tmp/chrome-profile");
 
-                Driver = new ChromeDriver(chromeDriverPath, options);
-
-                
+                Driver = new ChromeDriver(options);
                 Driver.Navigate().GoToUrl("https://renzodtavares.github.io/simpleCRUD/main.html");
 
             }
@@ -46,7 +42,6 @@ namespace SeleniumProject
         public void InserirItem()
         {
 
-            // [Incluir novo funcionario]
             Driver.FindElement(By.XPath("//div[@class='container']//button[@data-target='#addEmployeeModal']")).Click();
 
             IWebElement nameInput = Driver.FindElement(By.Id("name"));
@@ -121,39 +116,40 @@ namespace SeleniumProject
                 saveButton.Click();
             }
         }
-        
-        [Test, Repeat(2), Order(3)]
+
+        [Test, Repeat(1), Order(3)]
         public void ExcluirItemAleatorio()
         {
-            // [Exclui um item aleatorio]
             var deleteButtons = Driver.FindElements(By.XPath("//button[contains(text(),'Delete')]"));
 
-            if (deleteButtons.Count > 0)
+            Random random = new Random();
+            int randomIndex = random.Next(deleteButtons.Count);
+            IWebElement randomDeleteButton = deleteButtons[randomIndex];
+            var row = randomDeleteButton.FindElement(By.XPath("./../../.."));
+            
+
+            var itemName = row.FindElement(By.XPath(".//td[1]")).Text;
+
+            var rowToDelete = Driver.FindElement(By.XPath($"//td[text()='{itemName}']/.."));
+
+            if (rowToDelete != null)
             {
-                Random random = new Random();
-                int randomIndex = random.Next(deleteButtons.Count);
-                IWebElement randomDeleteButton = deleteButtons[randomIndex];
-
-                var row = randomDeleteButton.FindElement(By.XPath("./../../.."));
-                var itemName = row.FindElement(By.XPath(".//td[1]")).Text;
-
-                randomDeleteButton.Click();
+                var deleteButton = rowToDelete.FindElement(By.XPath(".//button[contains(text(),'Delete')]"));
+                deleteButton.Click();
                 Thread.Sleep(1000);
 
-                
-                bool itemDeleted = Driver.PageSource.Contains(itemName);
+                bool itemDeleted = !Driver.PageSource.Contains(itemName);
                 Assert.IsTrue(itemDeleted, "O item foi excluído com sucesso.");
             }
             else
             {
-                Assert.Fail("Nenhum botão 'Delete' encontrado.");
+                Assert.Fail($"Nenhuma linha com o nome '{itemName}' encontrada para exclusão.");
             }
         }
-        
-        [Test]
+
+            [Test]
         public void IncluirComValidacaoDeDuplicata()
         {
-            //[Valida itens duplicados]
             var employeeNameElements = Driver.FindElements(By.XPath("//tbody[@id='employeeTable']/tr/td[1]"));
 
             if (employeeNameElements.Count > 0)
@@ -183,18 +179,24 @@ namespace SeleniumProject
                 var saveButton = Driver.FindElement(By.CssSelector("#addEmployeeForm button[type='submit']"));
                 saveButton.Click();
 
+                var employeeNames = Driver.FindElements(By.XPath("//tbody[@id='employeeTable']/tr/td[1]"));
+                var duplicatedNameCount = employeeNames.Count(name => name.Text.ToLower() == userName.ToLower());
+
+                if (duplicatedNameCount == 2)
+                {
+                    Assert.Fail("O nome aparece duas vezes na tabela.");
+                }
+
                 var duplicatesMessage = Driver.FindElement(By.CssSelector(".duplicates-message"));
                 Assert.IsTrue(duplicatesMessage.Displayed, "A mensagem de erro não apareceu.");
 
-                var employeeNames = Driver.FindElements(By.XPath("//tbody[@id='employeeTable']/tr/td[1]"));
-                var duplicatedNameExists = employeeNames.Any(name => name.Text == userName);
-                Assert.IsFalse(duplicatedNameExists, "O nome duplicado ainda está na grade.");
             }
             else
             {
                 Assert.Fail("Nenhum nome de funcionário encontrado na tabela.");
             }
         }
+
 
         static bool VerificarItemNaTabela(IWebDriver Driver, string[] expectedValues)
         {

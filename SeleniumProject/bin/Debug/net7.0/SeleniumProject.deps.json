@@ -15,7 +15,9 @@
           "NUnit3TestAdapter": "4.4.2",
           "Selenium.Support": "4.14.1",
           "Selenium.WebDriver": "4.14.1",
-          "coverlet.collector": "3.2.0"
+          "Selenium.WebDriver.ChromeDriver": "118.0.5993.7000",
+          "coverlet.collector": "3.2.0",
+          "xunit.extensibility.core": "2.5.3"
         },
         "runtime": {
           "SeleniumProject.dll": {}
@@ -358,6 +360,7 @@
           }
         }
       },
+      "Selenium.WebDriver.ChromeDriver/118.0.5993.7000": {},
       "System.Drawing.Common/7.0.0": {
         "dependencies": {
           "Microsoft.Win32.SystemEvents": "7.0.0"
@@ -377,7 +380,27 @@
           }
         }
       },
-      "System.Reflection.Metadata/1.6.0": {}
+      "System.Reflection.Metadata/1.6.0": {},
+      "xunit.abstractions/2.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/xunit.abstractions.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "xunit.extensibility.core/2.5.3": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.0",
+          "xunit.abstractions": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.1/xunit.core.dll": {
+            "assemblyVersion": "2.5.3.0",
+            "fileVersion": "2.5.3.0"
+          }
+        }
+      }
     }
   },
   "libraries": {
@@ -498,6 +521,13 @@
       "path": "selenium.webdriver/4.14.1",
       "hashPath": "selenium.webdriver.4.14.1.nupkg.sha512"
     },
+    "Selenium.WebDriver.ChromeDriver/118.0.5993.7000": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P+oMf57Rbt2mKr3k2OFijtg+Vm3xHYe147LWQLqB0aumjKuWxoZVZw1+K7rr9KqdGe646kvIVjtQH0+eheCawA==",
+      "path": "selenium.webdriver.chromedriver/118.0.5993.7000",
+      "hashPath": "selenium.webdriver.chromedriver.118.0.5993.7000.nupkg.sha512"
+    },
     "System.Drawing.Common/7.0.0": {
       "type": "package",
       "serviceable": true,
@@ -511,6 +541,20 @@
       "sha512": "sha512-COC1aiAJjCoA5GBF+QKL2uLqEBew4JsCkQmoHKbN3TlOZKa2fKLz5CpiRQKDz0RsAOEGsVKqOD5bomsXq/4STQ==",
       "path": "system.reflection.metadata/1.6.0",
       "hashPath": "system.reflection.metadata.1.6.0.nupkg.sha512"
+    },
+    "xunit.abstractions/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pot1I4YOxlWjIb5jmwvvQNbTrZ3lJQ+jUGkGjWE3hEFM0l5gOnBWS+H3qsex68s5cO52g+44vpGzhAt+42vwKg==",
+      "path": "xunit.abstractions/2.0.3",
+      "hashPath": "xunit.abstractions.2.0.3.nupkg.sha512"
+    },
+    "xunit.extensibility.core/2.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IjAQlPeZWXP89pl1EuOG9991GH1qgAL0rQfkmX2UV+PDenbYb7oBnQopL9ujE6YaXxgaQazp7lFjsDyyxD6Mtw==",
+      "path": "xunit.extensibility.core/2.5.3",
+      "hashPath": "xunit.extensibility.core.2.5.3.nupkg.sha512"
     }
   }
 }

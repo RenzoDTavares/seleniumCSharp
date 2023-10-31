@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "YT7ChGwb+xBmsdGrEKVEPywl0GlKC3f35zCsd28m5ECU3poVcO9nkFFhAHAW4ZOsQeYq3HmbDurpODxQ7SOLKQ==",
+  "dgSpecHash": "pzvs1jKCyVypVAFi5gmSrQAe+4VhaLeKh7d4veAXsK5LG9hPIMGGb/u7Y1piX1QMR9hTl+ARuBD+2nudTvHoQA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ZR411RS\\OneDrive - EY\\Documents\\GitHub\\seleniumCSharp\\SeleniumProject\\SeleniumProject.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,7 @@
     "C:\\Users\\ZR411RS\\.nuget\\packages\\nunit3testadapter\\4.4.2\\nunit3testadapter.4.4.2.nupkg.sha512",
     "C:\\Users\\ZR411RS\\.nuget\\packages\\selenium.support\\4.14.1\\selenium.support.4.14.1.nupkg.sha512",
     "C:\\Users\\ZR411RS\\.nuget\\packages\\selenium.webdriver\\4.14.1\\selenium.webdriver.4.14.1.nupkg.sha512",
+    "C:\\Users\\ZR411RS\\.nuget\\packages\\selenium.webdriver.chromedriver\\118.0.5993.7000\\selenium.webdriver.chromedriver.118.0.5993.7000.nupkg.sha512",
     "C:\\Users\\ZR411RS\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",
     "C:\\Users\\ZR411RS\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
     "C:\\Users\\ZR411RS\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
