@@ -147,7 +147,7 @@ namespace SeleniumProject
             }
         }
 
-            [Test]
+        [Test, Repeat(1), Order(4)]
         public void IncluirComValidacaoDeDuplicata()
         {
             var employeeNameElements = Driver.FindElements(By.XPath("//tbody[@id='employeeTable']/tr/td[1]"));
